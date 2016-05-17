@@ -6,5 +6,6 @@ RUN apt-get install -y libxml2-dev zlib1g-dev libexpat1-dev libdb-dev libssl-dev
 
 RUN cpanm YAML::Loader::Base
 RUN cpanm XML::Feed::RSS --notest
+RUN cpanm LWP::Protocol::https
 
 RUN cpanm Plagger
